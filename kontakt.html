@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - ZemGlas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="log">
+                <h1>ZemGlas</h1>
+                <p>Satelitske analize za održivu budućnost</p>
+            </div>
+            <ul class="navmen">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="servis.html">Usluge</a></li>
+                <li><a href="oko.html">O nama</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+            <div class="menuRek">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="stranica">
+            <h1>Kontaktirajte nas</h1>
+            <p>Imate pitanja ili želite surađivati? Javite nam se!</p>
+        </section>
+
+        <section class="kontaktSad">
+            <div class="kontakt-info">
+                <article>
+                    <h2>Kontakt podaci</h2>
+                    <div class="kontakt-detalji">
+                        <div class="kontakt2">
+                            <h3>Adresa</h3>
+                            <p>ZemGlas d.o.o.<br>
+                            Satelitska ulica 26<br>
+                            35000 Slavonski Brod, Hrvatska</p>
+                        </div>
+                        <div class="kontakt2">
+                            <h3>Telefon</h3>
+                            <p>+385 1 234 567</p>
+                        </div>
+                        <div class="kontakt2">
+                            <h3>Email</h3>
+                            <p>info@zemglas.hr</p>
+                        </div>
+                        <div class="kontakt2">
+                            <h3>Radno vrijeme</h3>
+                            <p>Ponedjeljak - Petak: 08:00 - 16:00</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cpp">
+                    <h2>Često postavljana pitanja</h2>
+                    <div class="cpp2">
+                        <h3>Koliko često se ažuriraju satelitski podaci?</h3>
+                        <p>Naši satelitski podaci se ažuriraju svakih 24 sata za većinu usluga. Za posebne zahtjeve moguće je i češće ažuriranje.</p>
+                    </div>
+                    <div class="cpp2">
+                        <h3>Koja je rezolucija satelitskih snimki?</h3>
+                        <p>Radimo s snimkama visoke rezolucije od 30cm po pikselu, ovisno o lokaciji i zahtjevima projekta.</p>
+                    </div>
+                    <div class="cpp2">
+                        <h3>Koliko dugo traje obrada zahtjeva?</h3>
+                        <p>Standardni zahtjevi se obrađuju unutar 3 radna dana. Hitni zahtjevi mogu biti obrađeni unutar 24 sata.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="koSpremnik">
+                <h2>Pošaljite nam poruku</h2>
+                <form id="kontaktObrazac">
+                    <div class="polje-skupina">
+                        <label for="ime">Ime i prezime *</label>
+                        <input type="text" id="ime" name="ime" required>
+                        <div class="porukaError" id="imePogreska"></div>
+                    </div>
+
+                    <div class="polje-skupina">
+                        <label for="email">Email adresa *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="porukaError" id="emailPogreska"></div>
+                    </div>
+
+                    <div class="polje-skupina">
+                        <label for="tvrtka">Tvrtka/organizacija</label>
+                        <input type="text" id="tvrtka" name="tvrtka">
+                    </div>
+
+                    <div class="polje-skupina">
+                        <label for="usluga">Interes za uslugu</label>
+                        <select id="usluga" name="usluga">
+                            <option value="">Odaberite uslugu</option>
+                            <option value="poljoprivreda">Poljoprivredna analiza</option>
+                            <option value="klima">Klimatski monitoring</option>
+                            <option value="urbani">Urbani razvoj</option>
+                            <option value="ostalo">Ostalo</option>
+                        </select>
+                    </div>
+
+                    <div class="polje-skupina">
+                        <label for="poruka">Poruka *</label>
+                        <textarea id="poruka" name="poruka" rows="5" required></textarea>
+                        <div class="porukaError" id="porukaPogreska"></div>
+                    </div>
+
+                    <div class="polje-skupina checkbox">
+                        <input type="checkbox" id="novosti" name="novosti">
+                        <label for="novosti">Želim primati novosti i informacije o ZemGlas uslugama</label>
+                    </div>
+
+                    <button type="submit" class="gumb">Pošaljite poruku</button>
+                    <div id="obrazacPoruka"></div>
+                </form>
+
+                <div class="poslani-kontakti" id="poslaniKontakti">
+                    <h3>Poslani upiti</h3>
+                    <div id="kontaktiLista"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footSad">
+            <div class="footDio">
+                <h3>ZemGlas</h3>
+                <p>Vodeći startup za satelitsku analizu u Hrvatskoj</p>
+            </div>
+            <div class="footDio">
+                <h3>Kontakt</h3>
+                <p>Email: info@zemglas.hr</p>
+                <p>Tel: +385 1 234 567</p>
+            </div>
+            <div class="footDio">
+                <h3>Brzi linkovi</h3>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="servis.html">Usluge</a></li>
+                    <li><a href="oko.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footDno">
+            <p>&copy; 2026 ZemGlas. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
